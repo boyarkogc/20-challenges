@@ -1,1 +1,14 @@
 @import "tailwindcss";
+
+@theme {
+    /*Rich Black*/
+    --color-black: #0d1321;
+    /*Non Photo Blue*/
+    --color-blue: #92dce5;
+    /*Lavender Blush*/
+    --color-lavender: #eee5e9;
+    /*Gray*/
+    --color-gray: #7c7c7c;
+    /*Chili Red*/
+    --color-red: #d64933;
+}
