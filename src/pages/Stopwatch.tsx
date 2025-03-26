@@ -24,19 +24,20 @@ export default function Stopwatch() {
   }
 
   return (
-    <div className="flex flex-col items-center justify-center p-8 bg-yellow rounded-lg shadow-md max-w-md mx-auto">
-      <h2 className="text-2xl font-bold text-black mb-4">Stopwatch</h2>
-      <div className="text-5xl font-mono bg-blue-light py-6 px-8 rounded-lg shadow-inner w-full text-center mb-6">
+    <div className="flex flex-col items-center justify-center p-8 bg-light-secondary dark:bg-dark-secondary rounded-lg shadow-md max-w-md mx-auto">
+      <h2 className="text-2xl font-bold text-dark-primary dark:text-light-primary mb-4">Stopwatch</h2>
+      <div className="text-5xl font-mono bg-light-primary text-dark-primary dark:bg-dark-primary dark:text-light-primary
+      py-6 px-8 rounded-lg shadow-inner w-full text-center mb-6">
         {formatTime(elapsedTime)}
       </div>
       <div className="flex justify-around w-full">
         <button 
-          className="min-w-[120px] bg-blue-medium hover:bg-blue-dark text-white font-bold py-2 px-4 rounded"
+          className="min-w-[120px] bg-main-primary hover:bg-main-secondary text-dark-primary cursor-pointer font-bold py-2 px-4 rounded"
           onClick={() => setIsRunning(!isRunning)}
         >
           {isRunning ? "Stop" : "Start"}
         </button>
-        <button className="min-w-[120px] bg-blue-medium hover:bg-blue-dark text-white font-bold py-2 px-4 rounded" onClick={handleReset}>Reset</button>
+        <button className="min-w-[120px] bg-main-primary hover:bg-main-secondary text-dark-primary cursor-pointer font-bold py-2 px-4 rounded" onClick={handleReset}>Reset</button>
       </div>
     </div>
   )
