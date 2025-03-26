@@ -1,12 +1,13 @@
 @import "tailwindcss";
 
+@custom-variant dark (&:where(.dark, .dark *));
+
 @theme {
-    /*Penn Blue*/
-    --color-blue-light: #EEEFFB;
-    --color-blue-medium: #5A64D8;
-    --color-blue-dark: #17255A;
-    /*Saffron*/
-    --color-yellow: #F5CB5C;
-    /*Chili Red*/
-    --color-red: #CA3C25;
+    --color-dark-primary: #2B303A;
+    --color-dark-secondary: #4E576A;
+    --color-main-primary: #FFE66D;
+    --color-main-secondary: #F5CC00;
+    --color-light-primary: #F5F5F4;
+    --color-light-secondary: #E2E2DF;
+    --color-accent: #EE4266;
 }
