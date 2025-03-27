@@ -5,6 +5,7 @@ import Home from './pages/Home'
 import About from './pages/About'
 import RockPaperScissors from './pages/RockPaperScissors'
 import Stopwatch from './pages/Stopwatch'
+import Calculator from './pages/Calculator'
 
 function App() {
 
@@ -17,6 +18,7 @@ function App() {
             <Route path="/about" element={<About />} />
             <Route path="/rockpaperscissors" element={<RockPaperScissors />} />
             <Route path="/stopwatch" element={<Stopwatch />} />
+            <Route path="/calculator" element={<Calculator />} />
           </Route>
           {/* Add more routes as needed */}
         </Routes>
