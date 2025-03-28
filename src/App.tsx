@@ -6,6 +6,7 @@ import About from './pages/About'
 import RockPaperScissors from './pages/RockPaperScissors'
 import Stopwatch from './pages/Stopwatch'
 import Calculator from './pages/Calculator'
+import QuoteGenerator from './pages/QuoteGenerator'
 
 function App() {
 
@@ -19,6 +20,7 @@ function App() {
             <Route path="/rockpaperscissors" element={<RockPaperScissors />} />
             <Route path="/stopwatch" element={<Stopwatch />} />
             <Route path="/calculator" element={<Calculator />} />
+            <Route path="/quotegenerator" element={<QuoteGenerator />} />
           </Route>
           {/* Add more routes as needed */}
         </Routes>
