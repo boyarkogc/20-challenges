@@ -3,7 +3,7 @@ import quoteloading from "../assets/quoteloading.png"
 
 export default function QuoteGenerator() {
   const [quote, setQuote] = useState<null | {author: string, id: number, quote: string}>(null)
-  const [loading, setLoading] = useState(true)
+  const [loading, setLoading] = useState(false)
   const [error, setError] = useState<string | null>(null)
 
   const fetchQuote = async () => {
